@@ -1,0 +1,30 @@
+# 线上配置文件
+server:
+  port: 8107
+spring:
+  # 数据库配置
+  # todo 需替换配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://your ip:3306/dbname
+    username: root
+    password: xxxx
+  # Redis 配置
+  # todo 需替换配置
+  redis:
+    database: 1
+    host: 43.1xxxxxxx
+    port: 6379
+    timeout: 5000
+    password: xxxx
+    #配置MQ
+  rabbitmq:
+    host: xxxxxxx
+    port: 5672
+    password: xxxx
+    username: xxxxx
+
+mybatis-plus:
+  configuration:
+    # 生产环境关闭日志
+    log-impl: ''
